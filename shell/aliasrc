@@ -1,0 +1,22 @@
+alias buds="bluetoothctl connect 00:14:BE:50:C0:CA"
+alias dbuds="bluetoothctl disconnect 00:14:BE:50:C0:CA"
+
+alias discord="chromium --app="https://discord.com/login""
+alias element="chromium --app='https://app.element.io/?pk_vid=d4b162e0e6c511851631808451ab93fb#/home'"
+
+alias sudo="doas"
+
+alias dmon="sudo xrandr --output HDMI-A-0 --auto --above eDP && pkill xcompmgr"
+alias smon="xrandr --output HDMI-A-0 --off && xcompmgr&"
+
+alias get_idf='. $HOME/fun/esp/esp-idf/export.sh'
+
+alias beleg="cd ~/htw/prog/beleg/lending_system"
+
+alias vim=nvim
+alias vi=nvim
+
+alias update="sudo emerge --sync && sudo emerge -auDU --keep-going --with-bdeps=y @world"
+
+alias bye="sudo shutdown -h now"
+
