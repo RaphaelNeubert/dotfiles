@@ -1,22 +1,43 @@
-alias buds="bluetoothctl connect 00:14:BE:50:C0:CA"
-alias dbuds="bluetoothctl disconnect 00:14:BE:50:C0:CA"
-
-alias discord="chromium --app="https://discord.com/login""
-alias element="chromium --app='https://app.element.io/?pk_vid=d4b162e0e6c511851631808451ab93fb#/home'"
-
+#general
 alias sudo="doas"
+alias shn="doas shutdown -h now"
+alias update="doas emerge --sync && doas emerge -auDU --keep-going --with-bdeps=y @world"
+alias \
+    rnbel="cd ~/htw/rnkn/s82038-rn-beleg"
+    sebel="cd ~/htw/se/beleg/I5_GPS_Tracks"
+alias \
+    vim="nvim" \
+    vi="nvim"
+alias \
+	cp="cp -iv" \
+	mv="mv -iv" \
+	rm="rm -vI" \
+	bc="bc -ql" 
+alias \
+	ls="ls -hN --color=auto --group-directories-first" \
+	grep="grep --color=auto" \
+	diff="diff --color=auto" \
+	ccat="highlight --out-format=ansi"
 
-alias dmon="sudo xrandr --output HDMI-A-0 --auto --above eDP && pkill xcompmgr"
-alias smon="xrandr --output HDMI-A-0 --off && xcompmgr&"
+alias \
+    discord="chromium --app="https://discord.com/login"" \
+    element="chromium --app='https://app.element.io/?pk_vid=d4b162e0e6c511851631808451ab93fb#/home'"
+
+#desktop exclusive
+alias Visual_Paradigm=".local/bin/Visual_Paradigm_16.3/bin/Visual_Paradigm"
+
+
+
+#Laptop exclusive
+alias \
+    buds="bluetoothctl connect 00:14:BE:50:C0:CA" \
+    dbuds="bluetoothctl disconnect 00:14:BE:50:C0:CA"
+
+alias \
+    dmon="sudo xrandr --output HDMI-A-0 --auto --above eDP && pkill xcompmgr" \
+    smon="xrandr --output HDMI-A-0 --off && xcompmgr&"
 
 alias get_idf='. $HOME/fun/esp/esp-idf/export.sh'
 
-alias beleg="cd ~/htw/prog/beleg/lending_system"
 
-alias vim=nvim
-alias vi=nvim
-
-alias update="sudo emerge --sync && sudo emerge -auDU --keep-going --with-bdeps=y @world"
-
-alias bye="sudo shutdown -h now"
 

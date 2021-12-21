@@ -1,9 +1,13 @@
+<<<<<<< HEAD
 ncmpcpp_directory =         "~/.ncmpcpp"
 mpd_host =                  "127.0.0.1"
 mpd_port =                  "6600"
 mpd_music_dir =	            "~/music"
 
 visualizer_output_name = "my_fifo"
+=======
+visualizer_output_name = "mpdFIFO"
+>>>>>>> 72924caf3cf07dab41105bc5728e40a8c529692f
 visualizer_in_stereo = "yes"
 visualizer_type = "wave_filled"
 visualizer_look = "+|"
