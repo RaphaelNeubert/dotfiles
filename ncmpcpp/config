@@ -1,0 +1,4 @@
+visualizer_output_name = "mpdFIFO"
+visualizer_in_stereo = "yes"
+visualizer_type = "wave_filled"
+visualizer_look = "+|"
