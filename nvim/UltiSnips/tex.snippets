@@ -85,3 +85,51 @@ endsnippet
 snippet Ue "Ü" iA
 Ü
 endsnippet
+
+snippet mathtemplate "mathtemplate" bA
+\documentclass{article}
+
+\usepackage[margin=3cm]{geometry}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amscd}
+\usepackage{standalone}
+\usepackage{float}
+\usepackage{color}
+\usepackage[shortlabels]{enumitem}
+\usepackage{graphicx}
+\usepackage{caption}
+\graphicspath{ {./images/} }
+
+\begin{document}
+$1
+\end{document}
+endsnippet
+
+snippet titlepagetemplate "titlepagetemplate" bA
+\begin{titlepage}
+	\centering
+	{\scshape\LARGE Hochschule für Technik und Wirtschaft Dresden \par}
+	\vspace{1cm}
+	{\scshape\Large $1 \glqq $2\grqq\par}
+	\vspace{1.5cm}
+	{\huge\bfseries $3\par}
+	\vspace{2cm}
+	{\Large\itshape Raphael Neubert \par}
+	\vfill
+	\begin{minipage}{0.3\textwidth}
+		Studiengang:\\\\
+		Studiengruppe:\\\\
+		Matrikelnummer:
+	\end{minipage}
+	\begin{minipage}{0.3\textwidth}
+		Informatik\\\\
+		20/041/61\\\\
+		49916
+	\end{minipage}
+	\vfill
+
+	{\large \today\par}
+\end{titlepage}
+endsnippet

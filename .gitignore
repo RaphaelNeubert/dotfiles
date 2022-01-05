@@ -13,8 +13,8 @@ bpytop/error.log
 !shell/
 
 !mpd/
+mpd/state
 
 !ncmpcpp/
 ncmpcpp/error.log
 
-!htop/

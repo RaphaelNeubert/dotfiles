@@ -3,8 +3,9 @@ alias sudo="doas"
 alias shn="doas shutdown -h now"
 alias update="doas emerge --sync && doas emerge -auDU --keep-going --with-bdeps=y @world"
 alias \
-    rnbel="cd ~/htw/rnkn/s82038-rn-beleg"
-    sebel="cd ~/htw/se/beleg/I5_GPS_Tracks"
+    rnbel="cd ~/htw/rnkn/s82038-rn-beleg" \
+    sebel="cd ~/htw/se/beleg/I5_GPS_Tracks" \
+    cgbel="cd ~/htw/cg/beleg-opengl"
 alias \
     vim="nvim" \
     vi="nvim"

@@ -46,7 +46,9 @@ colorscheme gruvbox-material
 autocmd filetype c nnoremap <f5> :w <bar> !gcc -Wall % && ./a.out <CR>
 autocmd filetype cpp nnoremap <f5> :w <bar> !g++ -Wall % && ./a.out <CR>
 autocmd filetype c nnoremap <f2> :w <bar> !make && ./main <CR>
-autocmd filetype cpp nnoremap <f2> :w <bar> !make && ./main <CR>
+autocmd filetype cpp nnoremap <f3> :w <bar> !make && ./main <CR>
+autocmd filetype cpp nnoremap <f2> :w <bar> !(cd ..; make) <CR>
+autocmd filetype cpp nnoremap <f4> :w <bar> !(cd ..; ./main) <CR>
 autocmd filetype java nnoremap <f5> :w <bar> !javac % && java %:r <CR>
 autocmd filetype java nnoremap <f2> :w <bar> !(cd ..; make) <CR>
 autocmd filetype python nnoremap <f5> :w <bar> !python % <CR>
