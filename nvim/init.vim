@@ -54,7 +54,7 @@ autocmd filetype java nnoremap <f2> :w <bar> !(cd ..; make) <CR>
 autocmd filetype python nnoremap <f5> :w <bar> !python % <CR>
 autocmd filetype tex nnoremap <f5> :w <bar> :VimtexCompile <CR>
 autocmd filetype md nnoremap <M-m> :MarkdownPreview<CR>
-autocmd filetype adoc nnoremap <f2> :w <bar> :AdocPdfLiveStart <bar> :AdocPdfLiveOpen <CR>
+autocmd filetype adoc nnoremap <f2> :w <bar> :!asciidoctor -r asciidoctor-pdf -b pdf % <CR>
 autocmd filetype adoc nnoremap <f5> :w <bar> :AdocPdfLiveStart <CR>
 
 
@@ -64,6 +64,7 @@ autocmd BufNewFile lec*.tex 0r ~/.config/nvim/templates/math.tex
 nnoremap <leader>a :lua require("harpoon.mark").add_file()<CR>
 nnoremap <C-e> :lua require("harpoon.ui").toggle_quick_menu()<CR>
 
+" Harpoon
 nnoremap <C-h> :lua require("harpoon.ui").nav_file(1)<CR>
 nnoremap <C-t> :lua require("harpoon.ui").nav_file(2)<CR>
 nnoremap <C-n> :lua require("harpoon.ui").nav_file(3)<CR>
@@ -72,6 +73,11 @@ nnoremap <leader>tu :lua require("harpoon.term").gotoTerminal(1)<CR>
 nnoremap <leader>te :lua require("harpoon.term").gotoTerminal(2)<CR>
 nnoremap <leader>cu :lua require("harpoon.term").sendCommand(1, 1)<CR>
 nnoremap <leader>ce :lua require("harpoon.term").sendCommand(1, 2)<CR>
+" Telescope
+nnoremap <leader>ff <cmd>lua require('telescope.builtin').find_files()<CR>
+nnoremap <leader>fg <cmd>lua require('telescope.builtin').live_grep()<CR>
+nnoremap <leader>fb <cmd>lua require('telescope.builtin').buffers()<CR>
+nnoremap <leader>fh <cmd>lua require('telescope.builtin').help_tags()<CR>
 
 " exit terminal mode using escape
 tnoremap <Esc> <C-\><C-n>

@@ -23,4 +23,10 @@ return require('packer').startup(function()
                     style_regex = 'style\\\\.ya?ml'\
                 }"
     }
+    use "hsanson/vim-android"
+    use {
+      'nvim-telescope/telescope.nvim',
+      requires = { {'nvim-lua/plenary.nvim'} }
+    }
 end)
+
