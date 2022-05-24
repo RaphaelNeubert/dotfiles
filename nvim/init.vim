@@ -12,7 +12,10 @@ Plug 'sirver/ultisnips'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }}
 call plug#end()
 
+set completeopt=menu,menuone,noselect
+
 lua require ('plugins')
+lua require ('config/nvim-cmp')
 
 let g:tex_flavor='latex'
 let g:vimtex_view_method='zathura'

@@ -5,7 +5,7 @@ alias update="doas emerge --sync && doas emerge -auDU --keep-going --with-bdeps=
 alias \
     rnbel="cd ~/htw/rnkn/s82038-rn-beleg" \
     sebel="cd ~/htw/se/beleg/I5_GPS_Tracks" \
-    cgbel="cd ~/htw/cg/beleg-opengl"
+    itbel="cd ~/htw/it/beleg-webdev"
 alias \
     vim="nvim" \
     vi="nvim"
