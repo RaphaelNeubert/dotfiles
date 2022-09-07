@@ -45,7 +45,8 @@ colorscheme gruvbox-material
 
 autocmd filetype c nnoremap <f5> :w <bar> !gcc -Wall % && ./a.out <CR>
 autocmd filetype cpp nnoremap <f5> :w <bar> !g++ -Wall % && ./a.out <CR>
-autocmd filetype c nnoremap <f2> :w <bar> !make && ./main <CR>
+autocmd filetype c nnoremap <f2> :w <bar> !(cd ..; make) <CR>
+autocmd filetype c nnoremap <f3> :w <bar> !(cd ..; ./main) <CR>
 autocmd filetype cpp nnoremap <f3> :w <bar> !make && ./main <CR>
 autocmd filetype cpp nnoremap <f2> :w <bar> !(cd ..; make) <CR>
 autocmd filetype cpp nnoremap <f4> :w <bar> !(cd ..; ./main) <CR>
@@ -63,6 +64,7 @@ autocmd BufNewFile lec*.tex 0r ~/.config/nvim/templates/math.tex
 
 nnoremap <leader>a :lua require("harpoon.mark").add_file()<CR>
 nnoremap <C-e> :lua require("harpoon.ui").toggle_quick_menu()<CR>
+nnoremap <ScrollWheelDown>:call SmoothScroll(1)<CR>
 
 " Harpoon
 nnoremap <C-h> :lua require("harpoon.ui").nav_file(1)<CR>
