@@ -31,9 +31,10 @@ alias Visual_Paradigm=".local/bin/Visual_Paradigm_16.3/bin/Visual_Paradigm"
 
 #Laptop exclusive
 alias \
-    buds="bluetoothctl connect 00:14:BE:50:C0:CA" \
-    dbuds="bluetoothctl disconnect 00:14:BE:50:C0:CA"
-
+    budso="bluetoothctl connect 00:14:BE:50:C0:CA" \
+    dbudso="bluetoothctl disconnect 00:14:BE:50:C0:CA" \
+    buds="bluetoothctl connect 38:8F:30:82:6E:BE" \
+    dbuds="bluetoothctl disconnect 38:8F:30:82:6E:BE"
 alias \
     dmon="sudo xrandr --output HDMI-A-0 --auto --above eDP && pkill xcompmgr" \
     smon="xrandr --output HDMI-A-0 --off && xcompmgr&"
