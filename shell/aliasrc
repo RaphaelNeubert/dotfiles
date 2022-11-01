@@ -3,7 +3,9 @@ alias sudo="doas"
 alias shn="doas shutdown -h now"
 alias update="doas emerge --sync && doas emerge -auDU --keep-going --with-bdeps=y @world"
 alias \
-    msmvid="~/.config/shell/scripts/msmvid.sh && exit"
+    msmvid="~/.config/shell/scripts/msmvid.sh && exit" \
+    legowork="~/.config/shell/scripts/work.sh && exit" \
+    itbel="cd ~/htw/it/s82038-it2-beleg"
 alias \
     vim="nvim" \
     vi="nvim"

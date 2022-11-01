@@ -16,6 +16,7 @@ set completeopt=menu,menuone,noselect
 
 lua require ('plugins')
 lua require ('config/nvim-cmp')
+lua require ('config/lsp-config')
 
 let g:tex_flavor='latex'
 let g:vimtex_view_method='zathura'
