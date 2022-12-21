@@ -5,7 +5,9 @@ alias update="doas emerge --sync && doas emerge -auDU --keep-going --with-bdeps=
 alias \
     msmvid="~/.config/shell/scripts/msmvid.sh && exit" \
     legowork="~/.config/shell/scripts/work.sh && exit" \
-    itbel="cd ~/htw/it/s82038-it2-beleg"
+    itbel="cd ~/htw/it/s82038-it2-beleg" \
+    nlp="cd ~/htw/nlp/translator" \
+    comp="cd ~/htw/comp/prakt/pl0cmp"
 alias \
     vim="nvim" \
     vi="nvim"
